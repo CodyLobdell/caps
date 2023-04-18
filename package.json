@@ -4,12 +4,24 @@
   "description": "Lab 11",
   "main": "eventPool.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node hub.js",
+    "db:config": "sequelize init:config",
+    "db:create": "sequelize db:create",
+    "test-watch": "NODE_ENV=test jest --verbose --coverage --watchAll",
+    "test": "NODE_ENV=test jest  --verbose --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^29.5.0"
+    "chance": "^1.1.10",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "eslint": "^8.29.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3"
   }
 }
