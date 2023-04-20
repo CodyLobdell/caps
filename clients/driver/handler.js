@@ -1,7 +1,7 @@
 "use strict";
 
 // The driverHandler function takes an optional event pool as a parameter
-function driverHandler(eventPool = require('../eventPool.js')) {
+function driverHandler(eventPool = require('../../eventPool.js')) {
 
   // Listen for the 'pickup' event from the event pool
   eventPool.on('pickup', (event) => {

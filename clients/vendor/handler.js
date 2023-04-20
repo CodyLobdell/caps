@@ -4,7 +4,7 @@ const Chance = require('chance');
 const chance = new Chance();
 
 // The simulatePickup function takes the storeName and an optional event pool as parameters
-function simulatePickup(storeName, eventPool = require('../eventPool.js')) {
+function simulatePickup(storeName, eventPool = require('../../eventPool.js')) {
   // Create a simulated order payload with random customer and address data
   const payload = {
     store: storeName,
